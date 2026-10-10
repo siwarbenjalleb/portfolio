@@ -1,0 +1,45 @@
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Building the <span class="accent">full stack</span> of the modern web</h2>
+        <div class="about-text">
+          <p>Full Stack Developer based in Ariana, Tunisia, with hands-on experience building web applications using <span class="accent">Spring Boot</span> and <span class="accent">React.js</span>. I enjoy crafting both robust backends and clean, intuitive frontends.</p>
+          <p>Currently pursuing an Engineering Degree in <span class="accent">Cloud Computing &amp; Cybersecurity</span> at <span class="accent">ESPRIT</span>, while working professionally at INFOTIKE. I hold a Bachelor's in Computer Engineering (IoT &amp; Embedded Systems) from FST.</p>
+          <p>Passionate about DevOps practices, automation, and building secure, scalable systems. I work fluently in Agile teams and love tackling challenges that bridge software development and cloud infrastructure.</p>
+        </div>
+        <div class="lang-row">
+          <span class="lang-badge">🇹🇳 Arabic</span>
+          <span class="lang-badge">🇫🇷 French</span>
+          <span class="lang-badge">🇬🇧 English</span>
+          <span class="lang-badge">🇮🇹 Italian</span>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="stats-grid">
+          @for (stat of stats; track stat.label) {
+            <div class="stat-card fade-in">
+              <span class="stat-value">{{ stat.value }}</span>
+              <span class="stat-label">{{ stat.label }}</span>
+            </div>
+          }
+        </div>
+        <div class="cert-list fade-in">
+          <h3 class="cert-title">Education</h3>
+          @for (cert of certifications; track cert.name) {
+            <div class="cert-item">
+              <div class="cert-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div>
+                <p class="cert-name">{{ cert.name }}</p>
+                <p class="cert-meta">{{ cert.issuer }} · {{ cert.year }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
